@@ -61,6 +61,11 @@ serenity {
     requirementsDir = "src/test/resources/features"
 
 }
+//java {
+//    toolchain {
+//        languageVersion = JavaLanguageVersion.of(17)
+//    }
+//}
 
 gradle.startParameter.continueOnFailure = true
 
