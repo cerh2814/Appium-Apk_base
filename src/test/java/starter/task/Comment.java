@@ -6,6 +6,10 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SendKeys;
 import starter.ui.CommentView;
 
+
+
+
+
 public class Comment implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {

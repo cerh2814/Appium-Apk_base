@@ -7,11 +7,9 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import starter.Questions.LoggerinQuestion;
 import starter.Questions.MessageinQuestion;
 import starter.task.Comment;
-import starter.task.Login;
-import starter.task.NavigateCommentTo;
+import starter.ui.NavigateCommentTo;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
