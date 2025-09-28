@@ -11,4 +11,3 @@ public class CommentView {
             .located(By.xpath("//android.widget.TextView[contains(@text,'Save')]"));
 }
 
-//"//android.widget.TextView[contains(@text,'You are logged in')]"

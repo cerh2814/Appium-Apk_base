@@ -1,13 +1,13 @@
 # language: es
-Característica: Registro de persona natural en CS
+Característica: Registro de persona natural
     Como usuario nuevo de la plataforma
     Quiero poder registrarme como persona natural
     Para acceder y utilizar los servicios ofrecidos de manera personalizada
 
     Escenario: Registro exitoso de persona natural
         Dado que estoy en la pagina de registro
-#        Cuando acepto los terminos y condiciones
-#        Cuando registro todos mis datos personales validos y completos
+        Cuando acepto los terminos y condiciones
+        Cuando registro todos mis datos personales validos y completos
 #        Y hago clic en el botón "Registrarse"
 #        Entonces debería ver un mensaje de confirmación indicando que el registro fue exitoso
 

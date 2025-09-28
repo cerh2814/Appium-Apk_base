@@ -2,6 +2,7 @@ package starter.stepdefinitions;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.es.*;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import starter.ui.CreateViewCS;
@@ -30,9 +31,10 @@ public class CreatePersonNatureStepDefinition {
     public void que_estoy_en_la_pagina_de_registro() {
         Serenity.takeScreenshot();
         theActorCalled("Usuario").attemptsTo(
+
                 //Click.on(HomeCSView.Aceptar)
-                Click.on(HomeCSView.Aceptar),
-                Click.on(CreateViewCS.HomeCS)
+                Click.on(HomeCSView.Aceptar)
+               // Click.on(CreateViewCS.HomeCS)
         );
     }
 
@@ -40,7 +42,7 @@ public class CreatePersonNatureStepDefinition {
     public void acepto_los_terminos_y_condiciones() {
         Serenity.takeScreenshot();
         theActorCalled("Usuario").attemptsTo(
-               // Click.on(CreateViewCS.HomeCS)
+               Click.on(CreateViewCS.HomeCS)
 
         );
 
@@ -48,6 +50,12 @@ public class CreatePersonNatureStepDefinition {
 
     @Cuando("registro todos mis datos personales validos y completos")
     public void registro_todos_mis_datos_personales_validos_y_completos() {
+        Serenity.takeScreenshot();
+        theActorCalled("Usuario").attemptsTo(
+
+                Click.on(CreateViewCS.createuse)
+
+        );
 
     }
 
