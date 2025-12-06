@@ -1,7 +1,9 @@
 package starter.stepdefinitions;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
@@ -24,6 +26,11 @@ public class LogInStepDefinitions {
     @Before
     public void set_the_stage() {
         OnStage.setTheStage(new OnlineCast());
+    }
+
+    @After
+    public void afterScenario() {
+        Serenity.takeScreenshot();
     }
 
 
